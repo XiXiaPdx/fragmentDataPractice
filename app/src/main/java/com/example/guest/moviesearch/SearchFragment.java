@@ -48,7 +48,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if (v == mSearchButton){
-            Log.d("message", "button clicked");
+            ((MainActivity)getActivity()).setTitleText("HI!!!!");
         }
 
     }
