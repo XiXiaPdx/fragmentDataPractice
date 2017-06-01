@@ -52,6 +52,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
         mChangeTextFromFragment.setOnClickListener(this);
         mChangeTextFromMain.setOnClickListener(this);
         mSubmit.setOnClickListener(this);
+        // slidenerd video...https://www.youtube.com/watch?v=fvG20PAUdcU   ---  this was deep. Something about dynamic run time polymorphnism.  Essentially allow us to call a method the interface ....which can exist ANYWHERE that implements that interface.
         comm = (Communicator) getActivity();
         return view;
 
@@ -85,6 +86,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
             textView.setText(input);
 
             Dog newDog = new Dog( input, 7);
+            //this is key...using the interface requirement on Main, we call the main method transportDog to move the object over.
            comm.transportDog(newDog);
 
         }
