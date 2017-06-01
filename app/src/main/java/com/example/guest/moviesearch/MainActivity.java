@@ -21,4 +21,8 @@ TextView mTitleText;
     public void setTitleText (String str){
         mTitleText.setText(str);
     }
+
+    public void toggleTitleText (){
+
+    }
 }

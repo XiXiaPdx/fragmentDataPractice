@@ -47,8 +47,11 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
+//        if (v == mSearchButton){
+//            ((MainActivity)getActivity()).setTitleText("HI!!!!");
+//        }
         if (v == mSearchButton){
-            ((MainActivity)getActivity()).setTitleText("HI!!!!");
+            ((MainActivity)getActivity()).mTitleText.setVisibility(View.INVISIBLE);
         }
 
     }
