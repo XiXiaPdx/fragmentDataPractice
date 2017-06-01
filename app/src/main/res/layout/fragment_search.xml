@@ -3,52 +3,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.guest.moviesearch.SearchFragment">
+    tools:context="com.example.guest.moviesearch.SearchFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/searchTextView"
-        android:layout_width="246dp"
-        android:layout_height="41dp"
+        android:layout_width="239dp"
+        android:layout_height="42dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginStart="69dp"
         android:text="SearchFragment"
         android:textAlignment="center"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/changeTextFragment"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.638" />
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/searchButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
+        android:id="@+id/changeTextMain"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="26dp"
+        android:text='Change Text from "Main Activity"'
+        app:layout_constraintBottom_toTopOf="@+id/searchInputText"
+        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Change Main Activity Text"
-        app:layout_constraintLeft_toLeftOf="@+id/searchTextView"
-        app:layout_constraintRight_toRightOf="@+id/searchTextView"
-        app:layout_constraintTop_toBottomOf="@+id/searchTextView" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <EditText
         android:id="@+id/searchInputText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="211dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="Test Data transfer to Main"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchButton" />
+        tools:layout_editor_absoluteY="461dp" />
+
+    <Button
+        android:id="@+id/showHideButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:text="Toggle Visibility"
+        app:layout_constraintBottom_toTopOf="@+id/changeTextMain"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/changeTextFragment"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:text='Change Text to "from fragment"'
+        app:layout_constraintBottom_toTopOf="@+id/showHideButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
